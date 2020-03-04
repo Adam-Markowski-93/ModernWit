@@ -17,6 +17,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+
+        animation: startAnimationBackground 5s 1 both;
     }
 
     &__logo {
@@ -41,7 +43,7 @@
 
     &__theme {
         flex-basis: 20%;
-        font-size: 25px;
+        font-size: 40px;
         opacity: 0;
     }
 
@@ -61,6 +63,8 @@
         text-align: center;
         opacity: 1;
         transition: 0.2s;
+
+        animation: startAnimationNav 1s 4.5s 1 both;
     }
 
     &__link {
@@ -78,7 +82,6 @@
             background-position: 30% 50%;
             width: 100px;
         }
-
     }
 
     &__effect-div {
@@ -114,13 +117,13 @@
 }
 
 .first {
-    animation: startAnimationTheme 3s 1s 1 both;
+    animation: startAnimationTheme 3s 0.5s 1 both;
 }
 
 .second {
-    animation: startAnimationTheme 3s 1.5s 1 both;
+    animation: startAnimationTheme 3s 1s 1 both;
 }
 
 .third {
-    animation: startAnimationTheme 3s 2s 1 both;
+    animation: startAnimationTheme 3s 1.5s 1 both;
 }

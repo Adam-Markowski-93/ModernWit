@@ -6,4 +6,64 @@
           box-sizing: border-box;
   font-family: 'Raleway', arial, sans-serif;
 }
+
+.wrapper {
+  margin: 25px;
+  position: relative;
+}
+
+.header {
+  border-radius: 20px;
+  height: calc(100vh - 50px);
+  background-image: url(/img/header-image/wiata-drewniana-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+.header__navigation {
+  width: 100%;
+  height: 100%;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  list-style: none;
+}
+
+.header__menu-item {
+  position: relative;
+  display: block;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  text-align: center;
+  opacity: 1;
+}
+
+.header__link {
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
+}
+
+.header__effect-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65px;
+  height: 300px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #fff;
+}
 /*# sourceMappingURL=style.css.map */

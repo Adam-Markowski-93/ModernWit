@@ -48,6 +48,7 @@
       flex-basis: 20%;
   text-align: center;
   opacity: 1;
+  z-index: 1;
 }
 
 .header__link {
@@ -58,12 +59,33 @@
 
 .header__effect-div {
   position: absolute;
-  top: 50%;
+  top: 0;
   left: 50%;
   width: 65px;
   height: 300px;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  background-color: #fff;
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.left {
+  background-image: url(/img/header-image/div1.jpg);
+}
+
+.center {
+  top: 100%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-image: url(/img/header-image/div2.jpg);
+}
+
+.right {
+  top: 200%;
+  left: 10%;
+  background-image: url(/img/header-image/div3.jpg);
 }
 /*# sourceMappingURL=style.css.map */

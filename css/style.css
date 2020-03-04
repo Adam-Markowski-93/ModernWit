@@ -146,7 +146,12 @@
 
 .wrapper {
   margin: 25px;
-  position: relative;
+}
+
+.page {
+  height: 100vh;
+  border-radius: 20px;
+  margin-top: 25px;
 }
 
 .header {
@@ -292,5 +297,17 @@
 .third {
   -webkit-animation: startAnimationTheme 3s 1.5s 1 both;
           animation: startAnimationTheme 3s 1.5s 1 both;
+}
+
+.main {
+  background-color: lightblue;
+}
+
+.section {
+  background-color: lightcoral;
+}
+
+.footer {
+  background-color: red;
 }
 /*# sourceMappingURL=style.css.map */

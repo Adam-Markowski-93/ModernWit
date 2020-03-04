@@ -1,4 +1,4 @@
-@keyframes startAnimationlogo {
+@keyframes startAnimationLogo {
     0% {
         opacity: 0;
         top: 50%;
@@ -22,5 +22,32 @@
         top: 5px;
         left: 5px;
         width: 25%;
+    }
+}
+
+@keyframes startAnimationTheme {
+    0% {
+        opacity: 0;
+    }
+
+    5% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+        left: -100%;
     }
 }

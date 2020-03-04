@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap&subset=latin-ext");
-@-webkit-keyframes startAnimationlogo {
+@-webkit-keyframes startAnimationLogo {
   0% {
     opacity: 0;
     top: 50%;
@@ -24,7 +24,7 @@
     width: 25%;
   }
 }
-@keyframes startAnimationlogo {
+@keyframes startAnimationLogo {
   0% {
     opacity: 0;
     top: 50%;
@@ -47,6 +47,50 @@
     top: 5px;
     left: 5px;
     width: 25%;
+  }
+}
+
+@-webkit-keyframes startAnimationTheme {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    left: -100%;
+  }
+}
+
+@keyframes startAnimationTheme {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    left: -100%;
   }
 }
 
@@ -90,6 +134,8 @@
   left: 5px;
   width: 25%;
   border-radius: 20px;
+  -webkit-animation: startAnimationLogo 5s 1 both;
+          animation: startAnimationLogo 5s 1 both;
 }
 
 .header__idea {
@@ -185,5 +231,20 @@
   top: -10%;
   left: 60%;
   background-image: url(/img/header-image/div2.jpg);
+}
+
+.first {
+  -webkit-animation: startAnimationTheme 3s 1s 1 both;
+          animation: startAnimationTheme 3s 1s 1 both;
+}
+
+.second {
+  -webkit-animation: startAnimationTheme 3s 1.5s 1 both;
+          animation: startAnimationTheme 3s 1.5s 1 both;
+}
+
+.third {
+  -webkit-animation: startAnimationTheme 3s 2s 1 both;
+          animation: startAnimationTheme 3s 2s 1 both;
 }
 /*# sourceMappingURL=style.css.map */

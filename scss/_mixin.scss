@@ -18,8 +18,17 @@
 
 // Background image param settings 
 
-@mixin bgparam ($repeat, $position, $size) {
+@mixin bgParam ($repeat, $position, $size) {
     background-repeat: $repeat;
     background-position: $position;
     background-size: $size;
+}
+
+// Position setting
+
+@mixin positionParam ($top, $left, $width, $height) {
+    top: $top;
+    left: $left;
+    width: $width;
+    height: $height;
 }

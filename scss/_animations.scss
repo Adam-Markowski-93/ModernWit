@@ -75,3 +75,27 @@
         opacity: 1;
     }
 }
+
+@keyframes footerCenterMove {
+    0% {
+        left: 50%;
+    }
+
+    100% {
+        left: 10%;
+    }
+}
+
+@keyframes footerLeftMove {
+    0% {
+        left: 50%;
+    }
+
+    50% {
+        left: 10%;
+    }
+
+    100% {
+        left: 0;
+    }
+}

@@ -1,3 +1,69 @@
 .main {
-    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: lightgray;
+
+    &__title-element {
+        margin: 5px 0 0 5px;
+        background-color: white;
+        width: 20%;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    &__motto-element {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    &__motto {
+        font-size: 30px;
+        text-align: center;
+        background-color: grey;
+        margin: 5px;
+        border-radius: 20px;
+        font-style: italic;
+    }
+
+    &__article {
+        flex-grow: 1;
+
+        display: flex;
+        background-color: #fff;
+        margin: 5px;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    &__des-title {
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        flex-basis: 75%;
+    }
+
+    &__image {
+        flex-basis: 25%;
+        width: 150px;
+        height: 150px;
+        border-radius: 20px;
+
+
+        @include bgparam (no-repeat, center, cover);
+    }
+
+}
+
+.quality {
+    background-image: url(/img/main-image/details.jpg);
+}
+
+.project {
+    background-image: url(/img/main-image/projects.jpg);
+}
+
+.materials {
+    background-image: url(/img/main-image/materials.jpg);
 }

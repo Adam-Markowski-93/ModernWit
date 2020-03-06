@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "font-awesome": "^4.7.0"
+    "@fortawesome/fontawesome-free": "^5.12.1"
   }
 }

@@ -9,10 +9,12 @@
 
 .wrapper {
     margin: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
 .page {
-    height: 100vh;
+    flex-basis: 100vh;
     border-radius: 20px;
     margin-top: 25px;
 }

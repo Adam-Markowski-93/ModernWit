@@ -14,9 +14,7 @@
         z-index: -1;
         border-radius: 20px;
 
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
+        @include bgparam (no-repeat, center, cover);
 
         animation: startAnimationBackground 5s 1 both;
     }
@@ -95,8 +93,7 @@
         transition: opacity 0.2s, width 0.2s, background-position 0.4s;
         z-index: 0;
 
-        background-size: cover;
-        background-position: 50% 50%;
+        @include bgparam (no-repeat, 50% 50%, cover);
     }
 }
 

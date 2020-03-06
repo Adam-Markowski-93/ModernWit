@@ -146,10 +146,18 @@
 
 .wrapper {
   margin: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .page {
-  height: 100vh;
+  -ms-flex-preferred-size: 100vh;
+      flex-basis: 100vh;
   border-radius: 20px;
   margin-top: 25px;
 }
@@ -171,8 +179,8 @@
   z-index: -1;
   border-radius: 20px;
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   -webkit-animation: startAnimationBackground 5s 1 both;
           animation: startAnimationBackground 5s 1 both;
 }
@@ -264,8 +272,9 @@
   -webkit-transition: opacity 0.2s, width 0.2s, background-position 0.4s;
   transition: opacity 0.2s, width 0.2s, background-position 0.4s;
   z-index: 0;
-  background-size: cover;
+  background-repeat: no-repeat;
   background-position: 50% 50%;
+  background-size: cover;
 }
 
 .left {
@@ -300,7 +309,84 @@
 }
 
 .main {
-  background-color: lightblue;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: lightgray;
+}
+
+.main__title-element {
+  margin: 5px 0 0 5px;
+  background-color: white;
+  width: 20%;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.main__motto-element {
+  font-size: 25px;
+  text-align: center;
+}
+
+.main__motto {
+  font-size: 30px;
+  text-align: center;
+  background-color: grey;
+  margin: 5px;
+  border-radius: 20px;
+  font-style: italic;
+}
+
+.main__article {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.main__des-title {
+  margin-bottom: 10px;
+}
+
+.main__description {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+}
+
+.main__image {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.quality {
+  background-image: url(/img/main-image/details.jpg);
+}
+
+.project {
+  background-image: url(/img/main-image/projects.jpg);
+}
+
+.materials {
+  background-image: url(/img/main-image/materials.jpg);
 }
 
 .section {

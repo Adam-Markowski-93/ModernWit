@@ -66,36 +66,40 @@
         border-radius: 20px;
 
         &--first {
-            @include positionParam (-35%, -45%, 400px, 150px);
+            @include positionParam (-45%, -50%, 400px, 150px);
             z-index: 4;
         }
 
         &--second {
-            @include positionParam (40%, -60%, 300px, 180px);
+            @include positionParam (50%, -60%, 300px, 190px);
             z-index: 4;
         }
 
         &--third {
-            @include positionParam (48%, 80%, 300px, 160px);
+            @include positionParam (48%, 85%, 300px, 170px);
             z-index: 4;
         }
+    }
+
+    &__des-title {
+        margin-bottom: 10px;
     }
 }
 
 .quality {
     background-image: url(/img/main-image/details.jpg);
-    @include positionParam (10%, 70%, 300px, 300px);
+    @include positionParam (0, 70%, 350px, 350px);
     z-index: 1;
 }
 
 .project {
     background-image: url(/img/main-image/projects.jpg);
-    @include positionParam (40%, 30%, 200px, 200px);
+    @include positionParam (40%, 25%, 250px, 250px);
     z-index: 2;
 }
 
 .materials {
     background-image: url(/img/main-image/materials.jpg);
-    @include positionParam (60%, 65%, 180px, 180px);
+    @include positionParam (65%, 65%, 200px, 200px);
     z-index: 0;
 }

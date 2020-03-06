@@ -22,4 +22,11 @@
     &--grow {
         flex-basis: 50vh;
     }
+
+    &--expanse {
+        min-height: 100vh;
+        border-radius: 20px;
+        margin-top: 25px;
+        overflow: hidden;
+    }
 }

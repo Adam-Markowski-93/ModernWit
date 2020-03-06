@@ -1,7 +1,5 @@
 .main {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    position: relative;
     background-color: lightgray;
 
     &__title-element {
@@ -12,58 +10,92 @@
         text-align: center;
     }
 
-    &__motto-element {
-        font-size: 25px;
-        text-align: center;
-    }
-
-    &__motto {
-        font-size: 30px;
-        text-align: center;
-        background-color: grey;
-        margin: 5px;
-        border-radius: 20px;
-        font-style: italic;
-    }
-
-    &__article {
-        flex-grow: 1;
-
-        display: flex;
-        background-color: #fff;
-        margin: 5px;
+    &__history {
+        position: absolute;
+        @include positionParam (100px, 20px, 200px, 350px);
+        background-color: red;
         border-radius: 20px;
         padding: 10px;
     }
 
-    &__des-title {
-        margin-bottom: 10px;
+    &__history-text {
+        color: white;
+        font-size: 18px;
     }
 
-    &__description {
-        flex-basis: 75%;
+    &__theme {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 300px;
+        height: 300px;
+    }
+
+    &__motto-element {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    &__motto {
+        font-size: 35px;
+        text-align: center;
+        background-color: grey;
+        margin: 5px;
+        padding: 10px;
+        border-radius: 20px;
+        font-style: italic;
+    }
+
+    &__image-section {
+        position: absolute;
+        @include positionParam (65%, 50%, 400px, 400px);
+        transform: translate(-50%, -50%);
     }
 
     &__image {
-        flex-basis: 25%;
-        width: 150px;
-        height: 150px;
-        border-radius: 20px;
-
-
-        @include bgparam (no-repeat, center, cover);
+        position: absolute;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        @include bgParam (no-repeat, 50% 50%, cover);
     }
 
+    &__article {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 10px 15px;
+        border-radius: 20px;
+
+        &--first {
+            @include positionParam (-35%, -45%, 400px, 150px);
+            z-index: 4;
+        }
+
+        &--second {
+            @include positionParam (40%, -60%, 300px, 180px);
+            z-index: 4;
+        }
+
+        &--third {
+            @include positionParam (48%, 80%, 300px, 160px);
+            z-index: 4;
+        }
+    }
 }
 
 .quality {
     background-image: url(/img/main-image/details.jpg);
+    @include positionParam (10%, 70%, 300px, 300px);
+    z-index: 1;
 }
 
 .project {
     background-image: url(/img/main-image/projects.jpg);
+    @include positionParam (40%, 30%, 200px, 200px);
+    z-index: 2;
 }
 
 .materials {
     background-image: url(/img/main-image/materials.jpg);
+    @include positionParam (60%, 65%, 180px, 180px);
+    z-index: 0;
 }

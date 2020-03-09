@@ -48,7 +48,7 @@
 
     &__image-section {
         position: absolute;
-        @include positionParam (65%, 50%, 400px, 400px);
+        @include positionParam (55%, 50%, 400px, 400px);
         transform: translate(-50%, -50%);
     }
 
@@ -83,6 +83,37 @@
 
     &__des-title {
         margin-bottom: 10px;
+    }
+
+    &__order {
+        position: absolute;
+        bottom: 5px;
+        left: 5px;
+        right: 5px;
+        height: 100px;
+        background-color: darkgrey;
+        border-radius: 20px;
+        padding: 10px;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    &__order-part {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 15%;
+
+        text-align: center;
+    }
+
+    &__icon {
+        flex-basis: 80%;
+        font-size: 40px;
+    }
+
+    &__order-name {
+        font-size: 14px;
     }
 }
 

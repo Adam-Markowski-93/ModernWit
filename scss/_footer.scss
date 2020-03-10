@@ -29,6 +29,11 @@
     &__icon {
         font-size: 40px;
         color: white;
+        transition: 0.2s;
+
+        &:hover {
+            font-size: 43px;
+        }
     }
 
     &__form {
@@ -63,6 +68,10 @@
     &__input {
         margin-bottom: 10px;
         width: 100%;
+        height: 20px;
+        padding: 0 5px;
+        border-radius: 10px;
+        border-style: none;
     }
 
     &__label {
@@ -72,6 +81,8 @@
     &__textarea {
         width: 100%;
         height: 50%;
+        border-radius: 10px;
+        padding: 5px;
     }
 
     &__button {
@@ -97,8 +108,28 @@
         left: 50%;
         height: 100%;
         width: 50%;
+        padding: 10px;
         background-color: red;
         border-radius: 20px;
         z-index: 3;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        color: white;
+    }
+
+    &__des {
+        font-weight: 700;
+    }
+
+    &__map-container {
+        position: absolute;
+        bottom: 10px;
+        right: 5%;
+        width: 90%;
+        height: 55%;
+        border-radius: 20px;
+        background-color: #fff;
     }
 }

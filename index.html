@@ -41,6 +41,8 @@
                 <p class="header__theme third">Trwałość</p>
             </section>
         </header>
+
+
         <main id="about" class="main page">
             <div class="main__title-element">
                 <h1 class="main__title">O nas</h1>
@@ -76,6 +78,8 @@
                 <div class="main__image project"></div>
                 <div class="main__image materials"></div>
             </section>
+
+
             <section class="main__order">
                 <div class="main__order-part">
                     <i class="main__icon fas fa-phone"></i>
@@ -102,8 +106,10 @@
                     <p class="main__order-name">Produkcja, realizacja</p>
                 </div>
             </section>
-
         </main>
+
+
+
         <section id="realization" class="section page--expanse">
             <div class="section__title-element">
                 <h1 class="section__title">Realizacje</h1>
@@ -126,11 +132,33 @@
         </section>
         <footer id="contact" class="footer page page--grow">
             <div class="footer__social">
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-instagram"></i>
+                <div class="footer__icon-container">
+                    <a target="blank" href="https://www.facebook.com/modernwit/"><i
+                            class="footer__icon fab fa-facebook-square"></i></a>
+                    <a target="blank" href="https://instagram.com/modern.wit?igshid=3jib0panvott"><i
+                            class="footer__icon fab fa-instagram"></i></a>
+                </div>
             </div>
-            <div class="footer__form"></div>
-            <div class="footer__map"></div>
+            <div class="footer__form">
+                <div class="footer__form-container">
+                    <h2>Skontaktuj się z nami!</h2>
+                    <form class="footer__form-element" action="" role="form">
+                        <label class="footer__label" for="name">Imię:</label>
+                        <input type="text" class="footer__input">
+
+                        <label class="footer__label" for="email">Email:</label>
+                        <input type="email" class="footer__input">
+
+                        <label class="footer__label" for="name">Wiadomość:</label>
+
+                        <textarea class="footer__textarea" placeholder="O co chcesz nas spytać ?"></textarea>
+
+                        <button class="footer__button" type="submit">Wyślij</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__map">
+            </div>
         </footer>
     </div>
 

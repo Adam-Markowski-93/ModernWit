@@ -16,20 +16,20 @@
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header page">
             <nav class="header__navigation">
                 <div class="header__menu-item">
-                    <a href="#" class="header__link about">O nas</a>
+                    <a href="#" data-name="about" class="header__link about">O nas</a>
                     <div class="header__effect-div left"></div>
                 </div>
 
                 <div class="header__menu-item">
-                    <a href="#" class="header__link realization">Realizacje</a>
+                    <a href="#" data-name="realization" class="header__link realization">Realizacje</a>
                     <div class="header__effect-div center"></div>
                 </div>
 
                 <div class="header__menu-item">
-                    <a href="#" class="header__link contact">Kontakt</a>
+                    <a href="#" data-name="contact" class="header__link contact">Kontakt</a>
                     <div class="header__effect-div right">
                     </div>
                 </div>
@@ -110,7 +110,7 @@
 
 
 
-        <section id="realization" class="section page--expanse">
+        <section id="realization" class="section page page--expanse">
             <div class="section__title-element">
                 <h1 class="section__title">Realizacje</h1>
             </div>
@@ -130,6 +130,8 @@
             <section class="section__realization"></section>
             <section class="section__realization"></section>
         </section>
+
+
         <footer id="contact" class="footer page page--grow">
             <div class="footer__social">
                 <div class="footer__icon-container">
@@ -142,27 +144,38 @@
             <div class="footer__form">
                 <div class="footer__form-container">
                     <h2>Skontaktuj się z nami!</h2>
-                    <form class="footer__form-element" action="" role="form">
+                    <form class="footer__form-element" action="contactform.php" role="form" method="post">
                         <label class="footer__label" for="name">Imię:</label>
-                        <input type="text" class="footer__input">
+                        <input type="text" class="footer__input" name="name">
 
                         <label class="footer__label" for="email">Email:</label>
-                        <input type="email" class="footer__input">
+                        <input type="email" class="footer__input" name="email" required>
 
                         <label class="footer__label" for="name">Wiadomość:</label>
 
-                        <textarea class="footer__textarea" placeholder="O co chcesz nas spytać ?"></textarea>
+                        <textarea class="footer__textarea" placeholder="O co chcesz nas spytać ?" name="message"
+                            required></textarea>
 
-                        <button class="footer__button" type="submit">Wyślij</button>
+                        <button class="footer__button" type="submit" name="submit">Wyślij</button>
                     </form>
                 </div>
             </div>
             <div class="footer__map">
+                <h2 class="footer__title">Dane kontaktowe</h2>
+                <p class="footer__des">Adres: Marii Krzyżowskiej 3, 42-700 Lubliniec</p>
+                <p class="footer__des">NIP: 5751897128</p>
+                <p class="footer__des">REGON: 381421611</p>
+                <p class="footer__des">Tel: 788-727-706</p>
+                <div class="footer__map-container"></div>
             </div>
         </footer>
     </div>
 
-    <script src="/js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKKrshlTpEtvCgRkQELk5CRf0Ilr59zGk&callback=createMap"
+        async defer></script>
+    <script src="/js/Scroller.js"></script>
+    <script src="/js/Back.js"></script>
+    <script src="/js/Map.js"></script>
 </body>
 
 </html>

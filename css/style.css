@@ -141,7 +141,7 @@
     left: 50%;
   }
   100% {
-    left: 10%;
+    left: 5%;
   }
 }
 
@@ -150,7 +150,7 @@
     left: 50%;
   }
   100% {
-    left: 10%;
+    left: 5%;
   }
 }
 
@@ -178,6 +178,30 @@
   }
 }
 
+@-webkit-keyframes backButtonMove {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes backButtonMove {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -198,8 +222,6 @@
 }
 
 .page {
-  -ms-flex-preferred-size: 100vh;
-      flex-basis: 100vh;
   border-radius: 20px;
   margin-top: 25px;
   overflow: hidden;
@@ -219,7 +241,8 @@
 
 .header {
   position: relative;
-  height: calc(100vh - 50px);
+  height: 100vh;
+  margin-top: 0;
 }
 
 .header::after {
@@ -366,6 +389,7 @@
 .main {
   position: relative;
   background-color: lightgray;
+  height: 100vh;
 }
 
 .main__title-element {
@@ -659,23 +683,112 @@
   z-index: 1;
   -webkit-animation: footerLeftMove 0.5s 0.25s 1 both;
           animation: footerLeftMove 0.5s 0.25s 1 both;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.footer__social > i {
-  font-size: 50px;
+.footer__icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 60px;
+      flex-basis: 60px;
+  height: 100%;
+}
+
+.footer__icon {
+  font-size: 40px;
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__icon:hover {
+  font-size: 43px;
 }
 
 .footer__form {
   position: absolute;
   top: 0;
-  left: 10%;
+  left: 5%;
   height: 100%;
-  width: 90%;
+  width: 95%;
+  padding: 10px;
   background-color: black;
   border-radius: 20px;
   z-index: 2;
   -webkit-animation: footerCenterMove 0.5s 1 both;
           animation: footerCenterMove 0.5s 1 both;
+}
+
+.footer__form-container {
+  width: 40%;
+  height: 100%;
+  color: white;
+  padding-left: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.footer__form-element {
+  justify-self: flex-end;
+}
+
+.footer__input {
+  margin-bottom: 10px;
+  width: 100%;
+  height: 20px;
+  padding: 0 5px;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.footer__label {
+  font-size: 16px;
+}
+
+.footer__textarea {
+  width: 100%;
+  height: 50%;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.footer__button {
+  margin-top: 25px;
+  width: 100%;
+  border: 2px solid red;
+  line-height: 25px;
+  background-color: red;
+  color: black;
+  font-size: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__button:hover {
+  background-color: white;
 }
 
 .footer__map {
@@ -684,8 +797,50 @@
   left: 50%;
   height: 100%;
   width: 50%;
+  padding: 10px;
   background-color: red;
   border-radius: 20px;
   z-index: 3;
+}
+
+.footer__title {
+  margin-bottom: 10px;
+  color: white;
+}
+
+.footer__des {
+  font-weight: 700;
+}
+
+.footer__map-container {
+  position: absolute;
+  bottom: 10px;
+  right: 5%;
+  width: 90%;
+  height: 55%;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.back-button {
+  position: fixed;
+  bottom: 10px;
+  right: 30px;
+  width: 65px;
+  height: 65px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 3px solid darkslategray;
+  z-index: 5;
+  text-align: center;
+  cursor: pointer;
+  -webkit-animation: backButtonMove 5s 1 both;
+          animation: backButtonMove 5s 1 both;
+}
+
+.back-button__icon {
+  font-size: 50px;
+  margin: 3px 0 3px;
+  color: darkslategray;
 }
 /*# sourceMappingURL=style.css.map */

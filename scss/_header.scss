@@ -1,6 +1,7 @@
 .header {
     position: relative;
-    height: calc(100vh - 50px);
+    height: 100vh;
+    margin-top: 0;
 
     &::after {
         position: absolute;

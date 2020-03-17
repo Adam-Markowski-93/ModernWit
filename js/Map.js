@@ -1,4 +1,4 @@
-function createMap() {
+function initMap() {
 
     //Set map options
     const options = {

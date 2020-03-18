@@ -72,14 +72,22 @@
         left: 50%;
         transform: translate(-50%, -50%);
         text-decoration: none;
+        font-weight: bold;
         color: white;
-        font-size: 30px;
+        font-size: 35px;
         z-index: 1;
+        letter-spacing: 1px;
+        transition: 0.2s;
 
-        &:hover~.header__effect-div {
-            opacity: 1;
-            background-position: 30% 50%;
-            width: 100px;
+        // &:hover~.header__effect-div {
+        //     opacity: 1;
+        //     background-position: 30% 50%;
+        //     width: 100px;
+        // }
+
+        &:hover {
+            color: red;
+            // background-color: rgba(0, 0, 0, 0.3);
         }
     }
 

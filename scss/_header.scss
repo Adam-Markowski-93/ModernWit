@@ -79,15 +79,9 @@
         letter-spacing: 1px;
         transition: 0.2s;
 
-        // &:hover~.header__effect-div {
-        //     opacity: 1;
-        //     background-position: 30% 50%;
-        //     width: 100px;
-        // }
 
         &:hover {
             color: red;
-            // background-color: rgba(0, 0, 0, 0.3);
         }
     }
 
@@ -101,22 +95,6 @@
 
         @include bgParam (no-repeat, 50% 50%, cover);
     }
-}
-
-.left {
-    top: 10%;
-    left: 40%;
-    background-image: url(/img/header-image/div1.jpg);
-}
-
-.center {
-    background-image: url(/img/header-image/div3.jpg);
-}
-
-.right {
-    top: -10%;
-    left: 60%;
-    background-image: url(/img/header-image/div2.jpg);
 }
 
 .first {

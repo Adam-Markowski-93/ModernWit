@@ -357,22 +357,6 @@
   background-size: cover;
 }
 
-.left {
-  top: 10%;
-  left: 40%;
-  background-image: url(/img/header-image/div1.jpg);
-}
-
-.center {
-  background-image: url(/img/header-image/div3.jpg);
-}
-
-.right {
-  top: -10%;
-  left: 60%;
-  background-image: url(/img/header-image/div2.jpg);
-}
-
 .first {
   -webkit-animation: startAnimationTheme 3s 0.5s 1 both;
           animation: startAnimationTheme 3s 0.5s 1 both;

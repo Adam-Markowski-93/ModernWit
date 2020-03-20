@@ -1,17 +1,16 @@
-const moveButtons = [...document.querySelectorAll(".header__link")];
+export class Scroller {
+    constructor() {
+        this.moveButtons = [...document.querySelectorAll(".header__link")];
+    }
 
-function moveToSection() {
-    const attr = this.getAttribute("data-name");
+    moveToSection() {
+        const attr = this.getAttribute("data-name");
+        const moveSection = document.getElementById(attr);
 
-    const moveSection = document.getElementById(attr);
-
-    window.scrollTo({
-        top: moveSection.offsetTop,
-        left: 0,
-        behavior: 'smooth'
-    });
-}
-
-moveButtons.forEach((el) => {
-    el.addEventListener("click", moveToSection);
-})
+        window.scrollTo({
+            top: moveSection.offsetTop,
+            left: 0,
+            behavior: 'smooth'
+        });
+    }
+};

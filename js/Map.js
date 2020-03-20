@@ -1,4 +1,4 @@
-function initMap() {
+initMap = () => {
 
     //Set map options
     const options = {
